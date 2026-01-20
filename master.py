@@ -25,6 +25,10 @@ from parsers.ngfs import NGFSParser
 from parsers.fed_press_usa import FedPressReleasesParser
 from parsers.treasury_usa import TreasuryUSAParser
 
+# Чтобы запустить все парсеры (они отработают по очереди) - достаточно раскомментить ниже PARSERS и запустить python master.py
+# По дефолту можно спарсить данные за последние ДВА МЕСЯЦА
+# Можно поменять на любой другой промежуток (см. ниже)
+
 PARSERS = [
     #BoEParser(sleep_s=0.2, max_items=200, debug=False), 
     #NBSParser(sleep_s=0.2), 
@@ -52,7 +56,7 @@ PARSERS = [
 
 def run_last_week():
     end_dt = datetime.now()
-    start_dt = end_dt - timedelta(days=60)
+    start_dt = end_dt - timedelta(days=60) # Можно заменить на любое другое количество дней "назад". Сейчас по дефолту парсится последние 60 дней (2 месяца)
 
     print(f"WINDOW: {start_dt:%Y-%m-%d} .. {end_dt:%Y-%m-%d}")
 
