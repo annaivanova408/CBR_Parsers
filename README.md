@@ -7,7 +7,7 @@
 В проекте подключены следующие источники:
 
 - **BoE (UK)** - Bank of England (news / publications)
-- **NBS (Serbia)** --National Bank of Serbia
+- **NBS (Serbia)** - National Bank of Serbia
 - **MNB (Hungary)** - Magyar Nemzeti Bank
 - **OeNB (Austria)** - Oesterreichische Nationalbank 
 - **ACPR (France)** - Autorité de contrôle prudentiel et de résolution (Banque de France)
